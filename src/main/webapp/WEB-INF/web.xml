@@ -1,0 +1,66 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Project2</display-name>
+  
+  <session-config>
+  	<session-timeout>2</session-timeout>
+  </session-config>
+  
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<servlet-class>csci310.servlets.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/api/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>csci310.servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/api/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AddStockServlet</servlet-name>
+  	<servlet-class>csci310.servlets.AddStockServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddStockServlet</servlet-name>
+  	<url-pattern>/api/addstock</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>GetStockServlet</servlet-name>
+  	<servlet-class>csci310.servlets.GetStockServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GetStockServlet</servlet-name>
+  	<url-pattern>/api/getstock</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RemoveStockServlet</servlet-name>
+  	<servlet-class>csci310.servlets.RemoveStockServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RemoveStockServlet</servlet-name>
+  	<url-pattern>/api/removestock</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StockHistoryServlet</servlet-name>
+  	<servlet-class>csci310.servlets.StockHistoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StockHistoryServlet</servlet-name>
+  	<url-pattern>/api/stockhistory</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
