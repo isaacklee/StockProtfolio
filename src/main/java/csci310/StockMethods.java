@@ -21,7 +21,7 @@ public class StockMethods {
 	//API query with given params
     public static String query(String params) {
         URL url1;
-        String apiKey = "&token=bu7dlav48v6uhfp5quig";
+        String apiKey = "";
         String url = "https://finnhub.io/api/v1/";
         //combined url with given params
         url = url+params+apiKey; 
